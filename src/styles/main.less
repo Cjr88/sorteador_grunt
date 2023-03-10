@@ -1,0 +1,63 @@
+
+@fontTexto: 'Climate Crisis', cursive;
+@fontPrincipal: 'Open Sans', sans-serif;
+@backgroundColor: aquamarine;
+@textColor: rgb(239, 113, 113);
+@hover:#f0c0c0;
+
+body{
+  background-color: @backgroundColor;
+    color: @textColor;
+    font-family: @fontPrincipal;
+}
+h1{
+    font-family: @fontTexto;
+    font-size: 2em;
+    text-align: center;
+}
+
+main{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2em;
+    text-align: center;
+
+}
+button{
+    padding: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-top: 16px;
+    border-radius: 8px;
+    color: @textColor;
+    background-color: #fff;
+    font-family: @fontPrincipal;
+
+    &:hover{
+        background-color:@hover;
+    }
+}
+input{
+    display: block;
+    margin: 16px auto 0 ;
+    font-size: 2em;
+    max-width: 120px;
+    text-align: center;
+    background-color: transparent;
+    color: @textColor;
+
+}
+.resultado{
+    padding: 16px;
+    margin-top: 120px;
+    border: 9px dotted #fff;
+    display: none;
+
+    span{
+        font-weight: bold;
+        display: block;
+        font-size: 3em;
+    }
+}
